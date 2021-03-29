@@ -30,8 +30,8 @@ ytd <- "YTD 2019"
 start_1 <- paste(month.abb[m],"2018",sep = " ")
 
 site <- "http://www.freddiemac.com/investors/financials/monthly-volume-summaries.html"
-save.pdf <- "C:/Users/Alex Pondok/Desktop/CMD Research and Developemt/CMD_PDF/freddie.pdf"
-save.csv <- "C:/Users/Alex Pondok/Desktop/CMD Research and Developemt/CMD_CSV/freddie.csv"
+save.pdf <- "C:/Users.../CMD_PDF/freddie.pdf"
+save.csv <- "C:/Users...CMD_CSV/freddie.csv"
 # START HERE
 s <- html_session(site)
 part <- parse_url(site)
@@ -129,8 +129,8 @@ write.csv(portfolio_profile, link, row.names = F)
 # }
 # print(readinputs())
 
-freddie <- read.csv("C:/Users/Alex Pondok/Desktop/CMD Research and Developemt/CMD_CSV/freddie.csv")
-FHLMCrecent <- read_excel("C:/Users/Alex Pondok/Desktop/CMD Research and Developemt/CMD_Excel/SCBsupplement.xlsx",
+freddie <- read.csv("C:/Users/.../CMD_CSV/freddie.csv")
+FHLMCrecent <- read_excel("C:/Users/.../CMD_Excel/SCBsupplement.xlsx",
                           sheet = "FHLMC monthly summary", skip = 2)
 
 freddie1 <- FHLMCrecent[,c(2:18,20:26)]
